@@ -92,7 +92,7 @@ class VendorCleanupCommand extends Command
     protected function getArguments()
     {
         return array(
-            array('dir', InputArgument::OPTIONAL, 'The path to vendor (relative from base path)', base_path() . '/' .  'vendor'),
+            array('dir', InputArgument::OPTIONAL, 'The path to vendor (absolute path)', base_path() . '/' .  'vendor'),
         );
     }
 

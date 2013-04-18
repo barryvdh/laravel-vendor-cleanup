@@ -2,6 +2,7 @@
 
 ### Remove tests & documentation from the vendor dir
 
+#### Linux only and requires the exec() command!
 Require this package in your composer.json:
 
     "barryvdh/laravel-vendor-cleanup": "dev-master"
