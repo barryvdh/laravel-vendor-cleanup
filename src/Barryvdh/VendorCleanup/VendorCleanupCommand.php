@@ -81,6 +81,10 @@ class VendorCleanupCommand extends Command
             exec("cd $TARGET/kriswallsmith/assetic && rm -rf CHANGELOG* phpunit.xml* tests docs");
         }
 
+        foreach(\Config::get('laravel-vendor-cleanup::commands') as $command){
+            $command = str_replace('$TARGET', $TARGET, $command);
+            exec($command);
+        }
     }
 
 
@@ -92,7 +96,7 @@ class VendorCleanupCommand extends Command
     protected function getArguments()
     {
         return array(
-            array('dir', InputArgument::OPTIONAL, 'The path to vendor (absolute path)', base_path() . '/' .  'vendor'),
+            array('dir', InputArgument::OPTIONAL, 'The path to vendor (absolute path)',\Config::get('laravel-vendor-cleanup::dir')),
         );
     }
 

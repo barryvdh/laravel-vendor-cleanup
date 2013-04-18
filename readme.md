@@ -28,7 +28,14 @@ You can configure your composer.json to do this, and cleanup after updating:
         "preferred-install": "dist"
     },
 
+Based most of the cleanup commands on the SensioDistributionBundle build script; https://github.com/sensio/SensioDistributionBundle/blob/master/Resources/bin/build.sh
 
+You can add your own command, when you publish the config file, and add the commands.
+Make sure you use single quotes around $target, because that will be replaced by the real value inside the function
+
+    'commands' => array(
+       'cd $TARGET/name/package && rm -rf CHANGELOG* phpunit.xml* tests docs',
+    ),
 
 
 
