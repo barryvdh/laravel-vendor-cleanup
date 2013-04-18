@@ -2,9 +2,6 @@
 
 ### Remove tests & documentation from the vendor dir
 
-
-### Automatic phpDoc generation for Laravel Facades
-
 Require this package in your composer.json:
 
     "barryvdh/laravel-vendor-cleanup": "dev-master"
