@@ -76,10 +76,45 @@ class VendorCleanupCommand extends Command
         exec("cd $TARGET/symfony/routing/Symfony/Component/Routing && rm -rf CHANGELOG* README* Tests" );
         exec("cd $TARGET/symfony/translation/Symfony/Component/Translation && rm -rf CHANGELOG* README* Tests" );
 
-        # Assetic
+        # anahkiasen
+        if(file_exists("$TARGET/anahkiasen/former")){
+            exec("cd $TARGET/anahkiasen/former && rm -rf README* CHANGELOG* CONTRIBUTING* phpunit.xml* tests");
+        }
+        if(file_exists("$TARGET/anahkiasen/html-object")){
+            exec("cd $TARGET/anahkiasen/html-object && rm -rf README* CHANGELOG* phpunit.xml* examples tests");
+        }
+        if(file_exists("$TARGET/anahkiasen/underscore-php")){
+            exec("cd $TARGET/anahkiasen/underscore-php && rm -rf README* CHANGELOG* phpunit.xml* tests");
+        }
+
+        # intervention
+        if(file_exists("$TARGET/intervention/image")){
+            exec("cd $TARGET/intervention/image && rm -rf README* phpunit.xml* public tests");
+        }
+
+        # jasonlewis
+        if(file_exists("$TARGET/jasonlewis/basset")){
+            exec("cd $TARGET/jasonlewis/basset && rm -rf README* phpunit.xml* tests");
+        }
+
+        #leafo
+        if(file_exists("$TARGET/leafo/lessphp")){
+            exec("cd $TARGET/leafo/lessphp && rm -rf README* docs tests Makefile package.sh");
+        }
+
+        # kriswallsmith
         if(file_exists("$TARGET/kriswallsmith/assetic")){
             exec("cd $TARGET/kriswallsmith/assetic && rm -rf CHANGELOG* phpunit.xml* tests docs");
         }
+
+        # mrclay
+        if(file_exists("$TARGET/mrclay/minify")){
+            exec("cd $TARGET/mrclay/minify && rm -rf HISTORY* MIN.txt UPGRADING* README* min_extras min_unit_tests min/builder min/config* min/quick-test* min/utils.php min/groupsConfig.php min/index.php");
+        }
+
+
+
+
 
         foreach(\Config::get('laravel-vendor-cleanup::commands') as $command){
             $command = str_replace('$TARGET', $TARGET, $command);
