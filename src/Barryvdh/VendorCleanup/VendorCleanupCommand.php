@@ -34,8 +34,13 @@ class VendorCleanupCommand extends Command
         $this->info("Cleaning dir: $TARGET");
 
         // doctrine
-        exec("cd $TARGET/doctrine/dbal && rm -rf bin build* tests lib/vendor");
-        exec("cd $TARGET/doctrine/common && rm -rf build* tests lib/vendor");
+        exec("cd $TARGET/doctrine/annotations && rm -rf bin tests ");
+        exec("cd $TARGET/doctrine/cache && rm -rf bin tests");
+        exec("cd $TARGET/doctrine/collections && rm -rf tests");
+        exec("cd $TARGET/doctrine/common && rm -rf README* UPGRADE* phpunit.xml* build* tests bin lib/vendor");
+        exec("cd $TARGET/doctrine/dbal && rm -rf bin build* docs docs2 tests lib/vendor");
+        exec("cd $TARGET/doctrine/inflector && rm -rf phpunit.xml* README* tests");
+        exec("cd $TARGET/doctrine/collections && rm -rf tests");
 
         // filp
         exec("cd $TARGET/filp/whoops && rm -rf README.md phpunit.xml* tests examples");
@@ -47,7 +52,7 @@ class VendorCleanupCommand extends Command
         exec("cd $TARGET/laravel/framework && rm -rf readme.md phpunit.xml* build tests");
 
         // monolog
-        exec("cd $TARGET/monolog/monolog && rm -rf README.markdown phpunit.xml* tests");
+        exec("cd $TARGET/monolog/monolog && rm -rf README.markdown phpunit.xml* tests doc");
 
         // nikic
         exec("cd $TARGET/nikic/php-parser && rm -rf README.md CHANGELOG* phpunit.xml* doc test test_old");
@@ -56,7 +61,7 @@ class VendorCleanupCommand extends Command
         exec("cd $TARGET/patchwork/utf8 && rm -rf README.md tests");
 
         // predis
-        exec("cd $TARGET/predis/predis && rm -rf README.md CHANGELOG* phpunit.xml* examples tests");
+        exec("cd $TARGET/predis/predis && rm -rf README.md CHANGELOG* phpunit.xml* examples tests bin FAQ CONTRIBUTING*");
 
         // swiftmailer
         exec("cd $TARGET/swiftmailer/swiftmailer && rm -rf CHANGES README* build* doc docs notes test-suite tests create_pear_package.php package*" );
