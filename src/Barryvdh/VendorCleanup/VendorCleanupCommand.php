@@ -33,35 +33,35 @@ class VendorCleanupCommand extends Command
         $TARGET = realpath($this->argument('dir'));
         $this->info("Cleaning dir: $TARGET");
 
-        # doctrine
+        // doctrine
         exec("cd $TARGET/doctrine/dbal && rm -rf bin build* tests lib/vendor");
         exec("cd $TARGET/doctrine/common && rm -rf build* tests lib/vendor");
 
-        # filp
+        // filp
         exec("cd $TARGET/filp/whoops && rm -rf README.md phpunit.xml* tests examples");
 
-        #ircmaxell
+        // ircmaxell
         exec("cd $TARGET/ircmaxell/password-compat && rm -rf README.md test");
 
-        # laravel
+        // laravel
         exec("cd $TARGET/laravel/framework && rm -rf readme.md phpunit.xml* build tests");
 
-        # monolog
+        // monolog
         exec("cd $TARGET/monolog/monolog && rm -rf README.markdown phpunit.xml* tests");
 
-        # nikic
+        // nikic
         exec("cd $TARGET/nikic/php-parser && rm -rf README.md CHANGELOG* phpunit.xml* doc test test_old");
 
-        # patchwork
+        // patchwork
         exec("cd $TARGET/patchwork/utf8 && rm -rf README.md tests");
 
-        # predis
+        // predis
         exec("cd $TARGET/predis/predis && rm -rf README.md CHANGELOG* phpunit.xml* examples tests");
 
-        # swiftmailer
+        // swiftmailer
         exec("cd $TARGET/swiftmailer/swiftmailer && rm -rf CHANGES README* build* doc docs notes test-suite tests create_pear_package.php package*" );
 
-        # symfony
+        // symfony
         exec("cd $TARGET/symfony/browser-kit/Symfony/Component/BrowserKit && rm -rf CHANGELOG* README* Tests" );
         exec("cd $TARGET/symfony/console/Symfony/Component/Console && rm -rf CHANGELOG* README* Tests" );
         exec("cd $TARGET/symfony/css-selector/Symfony/Component/CssSelector && rm -rf CHANGELOG* README* Tests" );
@@ -76,7 +76,7 @@ class VendorCleanupCommand extends Command
         exec("cd $TARGET/symfony/routing/Symfony/Component/Routing && rm -rf CHANGELOG* README* Tests" );
         exec("cd $TARGET/symfony/translation/Symfony/Component/Translation && rm -rf CHANGELOG* README* Tests" );
 
-        # anahkiasen
+        // anahkiasen
         if(file_exists("$TARGET/anahkiasen/former")){
             exec("cd $TARGET/anahkiasen/former && rm -rf README* CHANGELOG* CONTRIBUTING* phpunit.xml* tests");
         }
@@ -87,33 +87,30 @@ class VendorCleanupCommand extends Command
             exec("cd $TARGET/anahkiasen/underscore-php && rm -rf README* CHANGELOG* phpunit.xml* tests");
         }
 
-        # intervention
+        // intervention
         if(file_exists("$TARGET/intervention/image")){
             exec("cd $TARGET/intervention/image && rm -rf README* phpunit.xml* public tests");
         }
 
         # jasonlewis
-        if(file_exists("$TARGET/jasonlewis/basset")){
-            exec("cd $TARGET/jasonlewis/basset && rm -rf README* phpunit.xml* tests");
-        }
+        //if(file_exists("$TARGET/jasonlewis/basset")){
+        //    exec("cd $TARGET/jasonlewis/basset && rm -rf README* phpunit.xml* tests");
+        //}
 
-        #leafo
+        // leafo
         if(file_exists("$TARGET/leafo/lessphp")){
             exec("cd $TARGET/leafo/lessphp && rm -rf README* docs tests Makefile package.sh");
         }
 
-        # kriswallsmith
+        // kriswallsmith
         if(file_exists("$TARGET/kriswallsmith/assetic")){
             exec("cd $TARGET/kriswallsmith/assetic && rm -rf CHANGELOG* phpunit.xml* tests docs");
         }
 
-        # mrclay
+        // mrclay
         if(file_exists("$TARGET/mrclay/minify")){
             exec("cd $TARGET/mrclay/minify && rm -rf HISTORY* MIN.txt UPGRADING* README* min_extras min_unit_tests min/builder min/config* min/quick-test* min/utils.php min/groupsConfig.php min/index.php");
         }
-
-
-
 
 
         foreach(\Config::get('laravel-vendor-cleanup::commands') as $command){
