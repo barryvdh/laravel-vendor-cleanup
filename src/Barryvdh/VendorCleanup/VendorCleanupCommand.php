@@ -98,9 +98,9 @@ class VendorCleanupCommand extends Command
         }
 
         # jasonlewis
-        //if(file_exists("$TARGET/jasonlewis/basset")){
-        //    exec("cd $TARGET/jasonlewis/basset && rm -rf README* phpunit.xml* tests");
-        //}
+        if(file_exists("$TARGET/jasonlewis/basset")){
+            exec("cd $TARGET/jasonlewis/basset && rm -rf README* phpunit.xml* tests/Basset");
+        }
 
         // leafo
         if(file_exists("$TARGET/leafo/lessphp")){
@@ -118,7 +118,7 @@ class VendorCleanupCommand extends Command
         }
 
 
-        foreach(\Config::get('laravel-vendor-cleanup::commands') as $command){
+        foreach(\Config::get('laravel-vendor-cleanup::commands', array()) as $command){
             $command = str_replace('$TARGET', $TARGET, $command);
             exec($command);
         }
@@ -133,7 +133,7 @@ class VendorCleanupCommand extends Command
     protected function getArguments()
     {
         return array(
-            array('dir', InputArgument::OPTIONAL, 'The path to vendor (absolute path)',\Config::get('laravel-vendor-cleanup::dir')),
+            array('dir', InputArgument::OPTIONAL, 'The path to vendor (absolute path)', \Config::get('laravel-vendor-cleanup::dir', base_path() . '/vendor')),
         );
     }
 
