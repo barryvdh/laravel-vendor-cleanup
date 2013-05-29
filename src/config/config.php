@@ -15,15 +15,15 @@ return array(
 
     /*
     |--------------------------------------------------------------------------
-    | Commands
+    | Rules
     |--------------------------------------------------------------------------
     |
-    | Additional commands, to do your own cleanups
+    | Additional rules, to do your own cleanups
     |
     */
 
-    'commands' => array(
-       //'cd $TARGET/name/package && rm -rf CHANGELOG* phpunit.xml* tests docs',
+    'rules' => array(
+       'name/package' => 'README.md tests/*',
     ),
 
 

@@ -1,6 +1,8 @@
 {
     "name": "barryvdh/laravel-vendor-cleanup",
-    "description": "",
+    "description": "A vendor cleanup package, to remove tests and documentation to save space",
+    "keywords": ["laravel", "vendor", "cleanup"],
+    "license": "MIT",
     "authors": [
         {
             "name": "Barry vd. Heuvel",

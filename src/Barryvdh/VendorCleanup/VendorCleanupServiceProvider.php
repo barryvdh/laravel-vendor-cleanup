@@ -1,4 +1,14 @@
-<?php namespace Barryvdh\VendorCleanup;
+<?php
+/**
+ * Laravel Vendor Cleanup
+ *
+ * @author    Barry vd. Heuvel <barryvdh@gmail.com>
+ * @copyright 2013 Barry vd. Heuvel / Fruitcake Studio (http://www.fruitcakestudio.nl)
+ * @license   http://www.opensource.org/licenses/mit-license.php MIT
+ * @link      https://github.com/barryvdh/laravel-vendor-cleanup
+ */
+
+namespace Barryvdh\VendorCleanup;
 
 use Illuminate\Support\ServiceProvider;
 
