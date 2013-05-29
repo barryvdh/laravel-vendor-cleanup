@@ -23,7 +23,7 @@ return array(
     */
 
     'rules' => array(
-       'name/package' => 'README.md tests/*',
+      // 'name/package' => 'README.md tests/*',
     ),
 
 
