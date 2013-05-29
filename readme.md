@@ -5,7 +5,7 @@
 #### Linux only and requires the exec() command!
 Require this package in your composer.json:
 
-    "barryvdh/laravel-vendor-cleanup": "dev-master"
+    "barryvdh/laravel-vendor-cleanup": "1.*"
 
 And add the ServiceProvider to the providers array in app/config/app.php
 
