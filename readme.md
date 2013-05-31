@@ -42,7 +42,7 @@ You can add your own rules, when you publish the config file.
        'name/package' => 'CHANGELOG* phpunit.xml* tests docs',
     ),
 
-This wil look for files matching CHANGELOG* or phpunit.xml* or tests or docs` in vendor/name/package and delete them.
+This wil look for files matching `CHANGELOG*` or `phpunit.xml*` or `tests` or `docs` in vendor/name/package and delete them.
 
 If the package is commonly used, please make a PR to add the command to src/Barryvdh/VendorCleanup/VendorCleanupCommand.php
 
