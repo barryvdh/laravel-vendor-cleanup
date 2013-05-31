@@ -13,7 +13,8 @@ namespace Barryvdh\VendorCleanup;
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Input\InputArgument;
-
+use Symfony\Component\Finder\Finder;
+use Illuminate\Filesystem\Filesystem;
 
 class VendorCleanupCommand extends Command
 {
@@ -49,10 +50,27 @@ class VendorCleanupCommand extends Command
 
         $rules = \Config::get('laravel-vendor-cleanup::rules');
 
+        $filesystem = new Filesystem();
+
         foreach($rules as $packageDir => $rule){
-            $TARGET = $vendorDir . '/' . $packageDir;
-            if($packageDir && $rule && file_exists($TARGET)){
-                exec("cd $TARGET && rm -rf $rule");
+            if(!file_exists($vendorDir . '/' . $packageDir)){
+                continue;
+            }
+            $patterns = explode(' ', $rule);
+            foreach($patterns as $pattern){
+                try{
+                    $finder = new Finder();
+                    foreach($finder->name($pattern)->in( $vendorDir . '/' . $packageDir) as $file){
+                        if($file->isDir()){
+                            $filesystem->deleteDirectory($file);
+                        }elseif($file->isFile()){
+                            $filesystem->delete($file);
+                        }
+                    }
+                }catch(\Exception $e){
+                    //TODO; check why error are thrown on deleting directories
+                    //$this->error("Could not parse $packageDir ($pattern): ".$e->getMessage());
+                }
             }
         }
     }

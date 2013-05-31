@@ -2,9 +2,8 @@
 
 ### Remove tests & documentation from the vendor dir
 
-#### Don't use this when you hava ssh access, just use composer and don't worry about size.
-#### If possible at all, just create a distribution script or use git to deploy.
-#### Linux only and uses the exec() with 'rm -rf', so use at your own risk and be careful!
+#### Don't use this when you hava ssh access, just use composer and don't worry about size!
+#### If possible at all, just create a distribution script or use git to deploy!
 
 Require this package in your composer.json:
 
@@ -43,8 +42,7 @@ You can add your own rules, when you publish the config file.
        'name/package' => 'CHANGELOG* phpunit.xml* tests docs',
     ),
 
-This wil look for `CHANGELOG* phpunit.xml* tests docs` in vendor/name/package and delete them. So this is the same as running:
-`cd /path/to/vendor/name/package && rm -rf CHANGELOG* phpunit.xml* tests docs`
+This wil look for files matching CHANGELOG* or phpunit.xml* or tests or docs` in vendor/name/package and delete them.
 
 If the package is commonly used, please make a PR to add the command to src/Barryvdh/VendorCleanup/VendorCleanupCommand.php
 
