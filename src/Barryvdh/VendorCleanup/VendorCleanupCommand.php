@@ -33,10 +33,6 @@ class VendorCleanupCommand extends Command
      */
     protected $description = 'Cleanup vendor directory.';
 
-    protected $rules = array(
-
-    );
-
 
     /**
      * Execute the console command.
@@ -60,6 +56,8 @@ class VendorCleanupCommand extends Command
             foreach($patterns as $pattern){
                 try{
                     $finder = new Finder();
+
+                    /** @var \SplFileInfo $file */
                     foreach($finder->name($pattern)->in( $vendorDir . '/' . $packageDir) as $file){
                         if($file->isDir()){
                             $filesystem->deleteDirectory($file);
