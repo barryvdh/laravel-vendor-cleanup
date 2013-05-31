@@ -2,7 +2,10 @@
 
 ### Remove tests & documentation from the vendor dir
 
-#### Linux only and requires the exec() command!
+#### Don't use this when you hava ssh access, just use composer and don't worry about size.
+#### If possible at all, just create a distribution script or use git to deploy.
+#### Linux only and uses the exec() with 'rm -rf', so use at your own risk and be careful!
+
 Require this package in your composer.json:
 
     "barryvdh/laravel-vendor-cleanup": "1.*"
