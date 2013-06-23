@@ -23,6 +23,7 @@ return array(
     */
 
     'rules' => array(
+        //Default Laravel 4 install
         'doctrine/annotations' => 'bin tests ',
         'doctrine/cache' => 'bin tests',
         'doctrine/collections' => 'tests',
@@ -32,7 +33,7 @@ return array(
         'doctrine/collections' => 'tests',
         'filp/whoops' => 'README.md phpunit.xml* tests examples',
         'ircmaxell/password-compat' => 'README.md test',
-        'laravel/framework' => 'readme.md phpunit.xml* build tests',
+        'laravel/framework' => 'build tests',
         'monolog/monolog' => 'README.markdown phpunit.xml* tests doc',
         'nikic/php-parser' => 'README.md CHANGELOG* phpunit.xml* doc test test_old',
         'patchwork/utf8' => 'README.md tests',
@@ -51,6 +52,8 @@ return array(
         'symfony/process/Symfony/Component/Process' => 'CHANGELOG* README* Tests',
         'symfony/routing/Symfony/Component/Routing' => 'CHANGELOG* README* Tests',
         'symfony/translation/Symfony/Component/Translation' => 'CHANGELOG* README* Tests',
+
+        //Packages:
         'anahkiasen/former' => 'README* CHANGELOG* CONTRIBUTING* phpunit.xml* tests',
         'anahkiasen/html-object' => 'README* CHANGELOG* phpunit.xml* examples tests',
         'anahkiasen/underscore-php' => 'README* CHANGELOG* phpunit.xml* tests',
@@ -59,6 +62,12 @@ return array(
         'leafo/lessphp' => 'README* docs tests Makefile package.sh',
         'kriswallsmith/assetic' => 'CHANGELOG* phpunit.xml* tests docs',
         'mrclay/minify' => 'HISTORY* MIN.txt UPGRADING* README* min_extras min_unit_tests min/builder min/config* min/quick-test* min/utils.php min/groupsConfig.php min/index.php',
+        'phpoffice/phpexcel' => 'Examples unitTests changelog.txt',
+        'phenx/php-font-lib' => 'www',
+        'mustache/mustache' => 'bin test',
+        'mockery/mockery' => 'examples tests',
+        'dompdf/dompdf' => 'www',
+
     ),
 
 
