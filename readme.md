@@ -38,11 +38,13 @@ When distributing
 
 You can add your own rules, when you publish the config file.
 
-    'commands' => array(
+    'custom' => array(
        'name/package' => 'CHANGELOG* phpunit.xml* tests docs',
     ),
 
-This wil look for files matching `CHANGELOG*` or `phpunit.xml*` or `tests` or `docs` in vendor/name/package and delete them.
+This will look for files matching `CHANGELOG*` or `phpunit.xml*` or `tests` or `docs` in vendor/name/package and delete them.
+
+When you publish the config file and add you own custom rules, it's recommended that you delete the "rules" setting in your published version so that you can benefit from any subsequent additions or changes made to the "officially" recognized rules.
 
 If the package is commonly used, please make a PR to add the command to src/Barryvdh/VendorCleanup/VendorCleanupCommand.php
 
