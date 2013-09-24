@@ -45,6 +45,8 @@ class VendorCleanupCommand extends Command
         $this->info("Cleaning dir: $vendorDir");
 
         $rules = \Config::get('laravel-vendor-cleanup::rules');
+        $custom = \Config::get('laravel-vendor-cleanup::custom', array());
+        $rules = array_merge($rules, $custom);
 
         $filesystem = new Filesystem();
 

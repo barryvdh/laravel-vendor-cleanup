@@ -18,11 +18,12 @@ return array(
     | Rules
     |--------------------------------------------------------------------------
     |
-    | Additional rules, to do your own cleanups
+    | Rules officially recognized by this package
     |
     */
 
     'rules' => array(
+        
         //Default Laravel 4 install
         'doctrine/annotations' => 'bin tests ',
         'doctrine/cache' => 'bin tests',
@@ -70,5 +71,21 @@ return array(
 
     ),
 
+    /*
+    |--------------------------------------------------------------------------
+    | Custom rules
+    |--------------------------------------------------------------------------
+    |
+    | Additional rules, to do your own cleanups
+    | Use the same format as the rules above
+    |
+    | If your rules would be useful to others, why not
+    | do a PR instead to add them to the package?
+    |
+    */
+
+    'custom' => array(
+
+    ),
 
 );
