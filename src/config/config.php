@@ -52,6 +52,7 @@ return array(
         'symfony/process/Symfony/Component/Process' => 'CHANGELOG* README* Tests',
         'symfony/routing/Symfony/Component/Routing' => 'CHANGELOG* README* Tests',
         'symfony/translation/Symfony/Component/Translation' => 'CHANGELOG* README* Tests',
+        'phpdocumentor/reflection-docblock' => 'README* CHANGELOG* phpunit.xml* tests',
 
         //Packages:
         'anahkiasen/former' => 'README* CHANGELOG* CONTRIBUTING* phpunit.xml* tests',
@@ -67,6 +68,10 @@ return array(
         'mustache/mustache' => 'bin test',
         'mockery/mockery' => 'examples tests',
         'dompdf/dompdf' => 'www',
+        
+        // Twig bridge cleanup
+        'rcrowe/twigbridge' => 'README* CHANGELOG* phpunit.xml* tests',
+        'twig/twig' => 'README* CHANGELOG* phpunit.xml* test doc',
 
     ),
 
