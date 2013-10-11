@@ -67,6 +67,12 @@ return array(
         'mustache/mustache' => 'bin test',
         'mockery/mockery' => 'examples tests',
         'dompdf/dompdf' => 'www',
+        
+        //Additional packages
+        'phpdocumentor/reflection-docblock' => 'README* CHANGELOG* phpunit.xml* tests',
+        'rcrowe/twigbridge' => 'README* CHANGELOG* phpunit.xml* tests',
+        'twig/twig' => 'README* CHANGELOG* phpunit.xml* test doc',
+        
 
     ),
 
