@@ -30,7 +30,6 @@ return array(
         'doctrine/common' => 'README* UPGRADE* phpunit.xml* build* tests bin lib/vendor',
         'doctrine/dbal' => 'bin build* docs docs2 tests lib/vendor',
         'doctrine/inflector' => 'phpunit.xml* README* tests',
-        'doctrine/collections' => 'tests',
         'filp/whoops' => 'README.md phpunit.xml* tests examples',
         'ircmaxell/password-compat' => 'README.md test',
         'laravel/framework' => 'build tests',
