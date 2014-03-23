@@ -49,8 +49,8 @@
 		'symfony/translation/Symfony/Component/Translation'          => 'CHANGELOG* README* Tests',
 
 		//Packages:
-		'anahkiasen/former'                                          => 'README* CHANGELOG* CONTRIBUTING* phpunit.xml* tests',
-		'anahkiasen/html-object'                                     => 'README* CHANGELOG* phpunit.xml* examples tests',
+		'anahkiasen/former'                                          => 'README* CHANGELOG* CONTRIBUTING* phpunit.xml* tests/*',
+		'anahkiasen/html-object'                                     => 'README* CHANGELOG* phpunit.xml* examples tests/*',
 		'anahkiasen/underscore-php'                                  => 'README* CHANGELOG* phpunit.xml* tests',
 		'intervention/image'                                         => 'README* phpunit.xml* public tests',
 		'jasonlewis/basset'                                          => 'README* phpunit.xml* tests/Basset',
