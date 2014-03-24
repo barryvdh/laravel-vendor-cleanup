@@ -9,7 +9,7 @@
 	|
 	*/
 	'dir'   => base_path() . '/vendor',
-
+	
 	/*
 	|--------------------------------------------------------------------------
 	| Rules
@@ -47,7 +47,7 @@
 		'symfony/process/Symfony/Component/Process'                  => 'CHANGELOG* README* Tests',
 		'symfony/routing/Symfony/Component/Routing'                  => 'CHANGELOG* README* Tests',
 		'symfony/translation/Symfony/Component/Translation'          => 'CHANGELOG* README* Tests',
-
+	
 		//Packages:
 		'anahkiasen/former'                                          => 'README* CHANGELOG* CONTRIBUTING* phpunit.xml* tests/*',
 		'anahkiasen/html-object'                                     => 'README* CHANGELOG* phpunit.xml* examples tests/*',
@@ -62,7 +62,7 @@
 		'mustache/mustache'                                          => 'bin test',
 		'mockery/mockery'                                            => 'examples tests',
 		'dompdf/dompdf'                                              => 'www',
-
+	
 		//Additional packages
 		'phpdocumentor/reflection-docblock'                          => 'README* CHANGELOG* phpunit.xml* tests',
 		'rcrowe/twigbridge'                                          => 'README* CHANGELOG* phpunit.xml* tests',
@@ -71,6 +71,10 @@
 		'maximebf/debugbar'                                          => 'README* CHANGELOG* phpunit.xml* tests demo docs',
 		'dflydev/markdown'                                           => 'README* CHANGELOG* phpunit.xml* tests',
 		'jeremeamia/SuperClosure'                                    => 'README* CHANGELOG* phpunit.xml* tests demo',
-		'nesbot/carbon'                                              => 'README* CHANGELOG* phpunit.xml* tests'
+		'nesbot/carbon'                                              => 'README* CHANGELOG* phpunit.xml* tests',
+		'willdurand/geocoder'                                        => 'README* CHANGELOG* CONTRIBUTING* phpunit.xml* tests',
+		'oyejorge/less.php'                                          => 'README* phpunit.xml* test',
+		'guzzle/guzzle'                                              => 'README* CHANGELOG* UPGRADING* phpunit.xml* docs tests',
+		'maximebf/debugbar'                                          => 'README* CHANGELOG* CONTRIBUTING* phpunit.xml* docs tests demo',
 	)
 );
