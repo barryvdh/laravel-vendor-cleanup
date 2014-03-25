@@ -19,7 +19,7 @@
 	|
 	*/
 	'rules' => array(
-		//Default Laravel 4 install
+		// Default Laravel 4 install
 		'doctrine/annotations'                                       => 'bin tests',
 		'doctrine/cache'                                             => 'bin tests',
 		'doctrine/collections'                                       => 'tests',
@@ -50,35 +50,36 @@
 		'symfony/routing/Symfony/Component/Routing'                  => 'CHANGELOG* README* Tests',
 		'symfony/translation/Symfony/Component/Translation'          => 'CHANGELOG* README* Tests',
 	
-		//Packages:
+		// Common packages
 		'anahkiasen/former'                                          => 'README* CHANGELOG* CONTRIBUTING* phpunit.xml* tests/*',
 		'anahkiasen/html-object'                                     => 'README* CHANGELOG* phpunit.xml* examples tests/*',
 		'anahkiasen/underscore-php'                                  => 'README* CHANGELOG* phpunit.xml* tests',
-		'dompdf/dompdf'                                              => 'www',
-		'intervention/image'                                         => 'README* phpunit.xml* public tests',
-		'jasonlewis/basset'                                          => 'README* phpunit.xml* tests/Basset',
-		'kriswallsmith/assetic'                                      => 'CHANGELOG* phpunit.xml* tests docs',
-		'leafo/lessphp'                                              => 'README* docs tests Makefile package.sh',
-		'mockery/mockery'                                            => 'examples tests',
-		'mrclay/minify'                                              => 'HISTORY* MIN.txt UPGRADING* README* min_extras min_unit_tests min/builder min/config* min/quick-test* min/utils.php min/groupsConfig.php min/index.php',
-		'mustache/mustache'                                          => 'bin test',
-		'phenx/php-font-lib'                                         => 'www',
-		'phpoffice/phpexcel'                                         => 'Examples unitTests changelog.txt',
-	
-		//Additional packages
 		'barryvdh/laravel-debugbar'                                  => 'README* CHANGELOG* phpunit.xml* tests',
 		'bllim/datatables'                                           => 'README* CHANGELOG* phpunit.xml* tests',
 		'cartalyst/sentry'                                           => 'README* CHANGELOG* phpunit.xml* tests docs',
 		'dflydev/markdown'                                           => 'README* CHANGELOG* phpunit.xml* tests',
+		'dompdf/dompdf'                                              => 'www',
 		'guzzle/guzzle'                                              => 'README* CHANGELOG* UPGRADING* phpunit.xml* docs tests',
+		'intervention/image'                                         => 'README* phpunit.xml* public tests',
+		'jasonlewis/basset'                                          => 'README* phpunit.xml* tests/Basset',
 		'jeremeamia/SuperClosure'                                    => 'README* CHANGELOG* phpunit.xml* tests demo',
+		'kriswallsmith/assetic'                                      => 'CHANGELOG* phpunit.xml* tests docs',
+		'leafo/lessphp'                                              => 'README* docs tests Makefile package.sh',
 		'maximebf/debugbar'                                          => 'README* CHANGELOG* CONTRIBUTING* phpunit.xml* docs tests demo',
+		'mockery/mockery'                                            => 'examples tests',
+		'mrclay/minify'                                              => 'HISTORY* MIN.txt UPGRADING* README* min_extras min_unit_tests min/builder min/config* min/quick-test* min/utils.php min/groupsConfig.php min/index.php',
+		'mustache/mustache'                                          => 'bin test',
 		'nesbot/carbon'                                              => 'README* CHANGELOG* phpunit.xml* tests',
 		'oyejorge/less.php'                                          => 'README* phpunit.xml* test',
+		'phenx/php-font-lib'                                         => 'www',
 		'phpdocumentor/reflection-docblock'                          => 'README* CHANGELOG* phpunit.xml* tests',
+		'phpoffice/phpexcel'                                         => 'Examples unitTests changelog.txt',
 		'rcrowe/twigbridge'                                          => 'README* CHANGELOG* phpunit.xml* tests',
 		'twig/twig'                                                  => 'README* CHANGELOG* phpunit.xml* test doc',
 		'venturecraft/revisionable'                                  => 'README* CHANGELOG* phpunit.xml* tests',
 		'willdurand/geocoder'                                        => 'README* CHANGELOG* CONTRIBUTING* phpunit.xml* tests',
+
+        // Project specific packages
+
 	)
 );
