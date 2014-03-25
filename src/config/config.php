@@ -68,7 +68,6 @@
 		'rcrowe/twigbridge'                                          => 'README* CHANGELOG* phpunit.xml* tests',
 		'twig/twig'                                                  => 'README* CHANGELOG* phpunit.xml* test doc',
 		'cartalyst/sentry'                                           => 'README* CHANGELOG* phpunit.xml* tests docs',
-		'maximebf/debugbar'                                          => 'README* CHANGELOG* phpunit.xml* tests demo docs',
 		'dflydev/markdown'                                           => 'README* CHANGELOG* phpunit.xml* tests',
 		'jeremeamia/SuperClosure'                                    => 'README* CHANGELOG* phpunit.xml* tests demo',
 		'nesbot/carbon'                                              => 'README* CHANGELOG* phpunit.xml* tests',
