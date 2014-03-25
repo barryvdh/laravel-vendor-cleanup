@@ -32,7 +32,9 @@
 		'monolog/monolog'                                            => 'README.markdown phpunit.xml* tests doc',
 		'nikic/php-parser'                                           => 'README.md CHANGELOG* phpunit.xml* doc test test_old',
 		'patchwork/utf8'                                             => 'README.md tests',
+		'phpseclib/phpseclib'                                        => 'README* CHANGELOG* phpunit.xml* tests',
 		'predis/predis'                                              => 'README.md CHANGELOG* phpunit.xml* examples tests bin FAQ CONTRIBUTING*',
+		'stack/builder'                                              => 'README* CHANGELOG* phpunit.xml* tests',
 		'swiftmailer/swiftmailer'                                    => 'CHANGES README* build* doc docs notes test-suite tests create_pear_package.php package*',
 		'symfony/browser-kit/Symfony/Component/BrowserKit'           => 'CHANGELOG* README* Tests',
 		'symfony/console/Symfony/Component/Console'                  => 'CHANGELOG* README* Tests',
@@ -64,6 +66,8 @@
 		'phpoffice/phpexcel'                                         => 'Examples unitTests changelog.txt',
 	
 		//Additional packages
+		'barryvdh/laravel-debugbar'                                  => 'README* CHANGELOG* phpunit.xml* tests',
+		'bllim/datatables'                                           => 'README* CHANGELOG* phpunit.xml* tests',
 		'cartalyst/sentry'                                           => 'README* CHANGELOG* phpunit.xml* tests docs',
 		'dflydev/markdown'                                           => 'README* CHANGELOG* phpunit.xml* tests',
 		'guzzle/guzzle'                                              => 'README* CHANGELOG* UPGRADING* phpunit.xml* docs tests',
@@ -74,6 +78,7 @@
 		'phpdocumentor/reflection-docblock'                          => 'README* CHANGELOG* phpunit.xml* tests',
 		'rcrowe/twigbridge'                                          => 'README* CHANGELOG* phpunit.xml* tests',
 		'twig/twig'                                                  => 'README* CHANGELOG* phpunit.xml* test doc',
+		'venturecraft/revisionable'                                  => 'README* CHANGELOG* phpunit.xml* tests',
 		'willdurand/geocoder'                                        => 'README* CHANGELOG* CONTRIBUTING* phpunit.xml* tests',
 	)
 );
