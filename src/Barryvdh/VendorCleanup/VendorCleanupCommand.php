@@ -56,9 +56,13 @@ class VendorCleanupCommand extends Command
             foreach($patterns as $pattern){
                 try{
                     $finder = new Finder();
+                    $finder->name($pattern)->in( $vendorDir . '/' . $packageDir);
+
+                    // we can't directly iterate over $finder if it lists dirs we're deleting
+                    $files = iterator_to_array($finder);
 
                     /** @var \SplFileInfo $file */
-                    foreach($finder->name($pattern)->in( $vendorDir . '/' . $packageDir) as $file){
+                    foreach($files as $file){
                         if($file->isDir()){
                             $filesystem->deleteDirectory($file);
                         }elseif($file->isFile()){
@@ -66,8 +70,7 @@ class VendorCleanupCommand extends Command
                         }
                     }
                 }catch(\Exception $e){
-                    //TODO; check why error are thrown on deleting directories
-                    //$this->error("Could not parse $packageDir ($pattern): ".$e->getMessage());
+                    $this->error("Could not parse $packageDir ($pattern): ".$e->getMessage());
                 }
             }
         }
