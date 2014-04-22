@@ -20,15 +20,16 @@
 	*/
 	'rules' => array(
 		// Default Laravel 4 install
+		'd11wtq/boris'                                               => 'README.md',
 		'filp/whoops'                                                => 'README.md phpunit.xml* tests examples',
 		'ircmaxell/password-compat'                                  => 'README.md test',
 		'laravel/framework'                                          => 'build tests',
-		'monolog/monolog'                                            => 'README.markdown phpunit.xml* tests doc',
-		'nesbot/carbon'                                              => 'README* CHANGELOG* phpunit.xml* tests',
+		'monolog/monolog'                                            => 'CHANGELOG.mdown README.mdown phpunit.xml* tests doc',
+		'nesbot/carbon'                                              => 'history.md readme.md phpunit.xml* tests',
 		'nikic/php-parser'                                           => 'README.md CHANGELOG* phpunit.xml* doc test test_old',
 		'patchwork/utf8'                                             => 'README.md tests',
 		'phpseclib/phpseclib'                                        => 'README* CHANGELOG* phpunit.xml* tests',
-		'predis/predis'                                              => 'README.md CHANGELOG* phpunit.xml* examples tests bin FAQ CONTRIBUTING*',
+		'predis/predis'                                              => 'README.md FAQ.md CONTRIBUTING.md CHANGELOG* phpunit.xml* examples tests bin',
 		'stack/builder'                                              => 'README* CHANGELOG* phpunit.xml* tests',
 		'swiftmailer/swiftmailer'                                    => 'CHANGES README* build* doc docs notes test-suite tests create_pear_package.php package*',
 		'symfony/browser-kit/Symfony/Component/BrowserKit'           => 'CHANGELOG* README* Tests',
@@ -43,6 +44,7 @@
 		'symfony/http-kernel/Symfony/Component/HttpKernel'           => 'CHANGELOG* README* Tests',
 		'symfony/process/Symfony/Component/Process'                  => 'CHANGELOG* README* Tests',
 		'symfony/routing/Symfony/Component/Routing'                  => 'CHANGELOG* README* Tests',
+		'symfony/security/Symfony/Component/Security'                => 'CHANGELOG* README* Tests',
 		'symfony/translation/Symfony/Component/Translation'          => 'CHANGELOG* README* Tests',
 	
 		// Common packages
