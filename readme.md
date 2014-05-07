@@ -21,6 +21,10 @@ You should change your composer file to use the `dist` version, without the .git
 You can configure your composer.json to do this, and cleanup after updating:
 
     "scripts":{
+        "post-install-cmd": [
+            "php artisan vendor-cleanup",
+            "php artisan optimize"
+        ],
         "post-update-cmd":[
             "php artisan vendor-cleanup",
             "php artisan optimize"
