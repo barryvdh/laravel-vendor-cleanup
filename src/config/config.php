@@ -1,6 +1,7 @@
 <?php
-
-$standard = 'README* CHANGELOG* FAQ* CONTRIBUTING* HISTORY* UPGRADING* phpunit.xml* package* examples doc docs test tests';
+$docs = 'README* CHANGELOG* FAQ* CONTRIBUTING* HISTORY* UPGRADING* UPGRADE* package* examples doc docs';
+$tests = '.travis.yml phpunit.xml* test tests Tests';
+$standard = "{$docs} {$tests}";
 
 return array(
 
@@ -52,12 +53,12 @@ return array(
         'symfony/translation/Symfony/Component/Translation'          => "{$standard}",
 
         // Common packages
-        'anahkiasen/former'                     => "{$standard}",
-        'anahkiasen/html-object'                => "{$standard}",
+        'anahkiasen/former'                     => "{$docs} phpunit.xml* tests/*",
+        'anahkiasen/html-object'                => "{$docs} phpunit.xml* tests/*",
         'anahkiasen/underscore-php'             => "{$standard}",
         'barryvdh/laravel-debugbar'             => "{$standard}",
         'bllim/datatables'                      => "{$standard}",
-        'cartalyst/sentry'                      => "{$standard} docs",
+        'cartalyst/sentry'                      => "{$standard}",
         'dflydev/markdown'                      => "{$standard}",
         'doctrine/annotations'                  => "{$standard} bin",
         'doctrine/cache'                        => "{$standard} bin",
