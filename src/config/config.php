@@ -77,7 +77,7 @@ return array(
         'guzzlehttp/guzzle'                     => "{$standard}",
         'guzzlehttp/oauth-subscriber'           => "{$standard}",
         'guzzlehttp/streams'                    => "{$standard}",
-        'imagine/imagine'                       => "{$standard} lib/Imagine/resources lib/Imagine/Test",
+        'imagine/imagine'                       => "{$standard} lib/Imagine/Test",
         'intervention/image'                    => "{$standard} public",
         'jasonlewis/basset'                     => "{$standard}",
         'jeremeamia/SuperClosure'               => "{$standard} demo",
