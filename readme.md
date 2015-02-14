@@ -2,6 +2,8 @@
 
 ### Remove tests & documentation from the vendor dir
 
+### Stand-alone Composer plugin: https://github.com/barryvdh/composer-cleanup-plugin
+
 #### Don't use this when you hava ssh access, just use composer and don't worry about size!
 #### If possible at all, just create a distribution script or use git to deploy!
 
