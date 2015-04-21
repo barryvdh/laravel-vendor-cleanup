@@ -45,7 +45,7 @@ class VendorCleanupCommand extends Command
         $vendorDir = realpath($this->argument('dir'));
         $this->info("Cleaning dir: $vendorDir");
 
-        $rules = \Config::get('laravel-vendor-cleanup::rules');
+        $rules = Config::get('laravel-vendor-cleanup::rules');
 
         $filesystem = new Filesystem();
 
@@ -86,7 +86,7 @@ class VendorCleanupCommand extends Command
     protected function getArguments()
     {
         return array(
-            array('dir', InputArgument::OPTIONAL, 'The path to vendor (absolute path)', \Config::get('laravel-vendor-cleanup::dir', base_path() . '/vendor')),
+            array('dir', InputArgument::OPTIONAL, 'The path to vendor (absolute path)', Config::get('laravel-vendor-cleanup::dir', base_path() . '/vendor')),
         );
     }
 
