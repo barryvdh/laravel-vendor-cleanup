@@ -15,6 +15,7 @@ use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Finder\Finder;
 use Illuminate\Filesystem\Filesystem;
+use Illuminate\Support\Facades\Config;
 
 class VendorCleanupCommand extends Command
 {
