@@ -104,6 +104,15 @@ return array(
         //AWS SDK
         'aws/aws-sdk-php'						=> "{$standard}",
 		'aws/aws-sdk-php-laravel'				=> "{$standard}",
+		
+		// PHPUnit Testing Framework
+		'phpunit/php-code-coverage'				=> "{$standard}",
+		'phpunit/php-file-iterator'				=> "{$standard}",
+		'phpunit/php-text-template'				=> "{$standard}",
+		'phpunit/php-timer'						=> "{$standard}",
+		'phpunit/php-token-stream'				=> "{$standard}",
+		'phpunit/phpunit'						=> "{$standard}",
+		'phpunit/phpunit-mock-objects'			=> "{$standard}",
 
         // Project specific packages
 
