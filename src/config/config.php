@@ -41,6 +41,9 @@ return array(
         'symfony/security/Symfony/Component/Security'                => "{$standard}",
         'symfony/security-core/Symfony/Component/Security/Core'      => "{$standard}",
         'symfony/translation/Symfony/Component/Translation'          => "{$standard}",
+		'symfony/polyfill-mbstring'									 => "{$standard}",
+		'symfony/var-dumper'										 => "{$standard}",
+		'symfony/yaml'											 	 => "{$standard}",
 
         // Default Laravel 4 install
         'd11wtq/boris'                          => "{$standard}",
