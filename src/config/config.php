@@ -41,6 +41,9 @@ return array(
         'symfony/security/Symfony/Component/Security'                => "{$standard}",
         'symfony/security-core/Symfony/Component/Security/Core'      => "{$standard}",
         'symfony/translation/Symfony/Component/Translation'          => "{$standard}",
+		'symfony/polyfill-mbstring'									 => "{$standard}",
+		'symfony/var-dumper'										 => "{$standard}",
+		'symfony/yaml'											 	 => "{$standard}",
 
         // Default Laravel 4 install
         'd11wtq/boris'                          => "{$standard}",
@@ -97,6 +100,19 @@ return array(
         'twig/twig'                             => "{$standard}",
         'venturecraft/revisionable'             => "{$standard}",
         'willdurand/geocoder'                   => "{$standard}",
+        
+        //AWS SDK
+        'aws/aws-sdk-php'						=> "{$standard}",
+		'aws/aws-sdk-php-laravel'				=> "{$standard}",
+		
+		// PHPUnit Testing Framework
+		'phpunit/php-code-coverage'				=> "{$standard}",
+		'phpunit/php-file-iterator'				=> "{$standard}",
+		'phpunit/php-text-template'				=> "{$standard}",
+		'phpunit/php-timer'						=> "{$standard}",
+		'phpunit/php-token-stream'				=> "{$standard}",
+		'phpunit/phpunit'						=> "{$standard}",
+		'phpunit/phpunit-mock-objects'			=> "{$standard}",
 
         // Project specific packages
 
