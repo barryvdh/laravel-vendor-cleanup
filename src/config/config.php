@@ -100,6 +100,10 @@ return array(
         'twig/twig'                             => "{$standard}",
         'venturecraft/revisionable'             => "{$standard}",
         'willdurand/geocoder'                   => "{$standard}",
+        
+        //AWS SDK
+        'aws/aws-sdk-php'						=> "{$standard}",
+		'aws/aws-sdk-php-laravel'				=> "{$standard}",
 
         // Project specific packages
 
